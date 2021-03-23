@@ -13,7 +13,7 @@ You only need to have docker installed: [Docker docs](https://docs.docker.com/en
 
 ## 2. Configuration
 
-Make sure you have ports 3000 and 3001 available as they are used by both backend and frontend. If you wish to change this, you need to modify this, please make sure to update `FRONTEND_CORS_URL` environment variable in `/backend/.env` and/or `REACT_APP_API_URL` in `/frontend/.env`.
+Make sure you have ports 3000 and 3001 available as they are used by both backend and frontend. If you wish to change this, you need to modify this, please make sure to update `FRONTEND_CORS_URL` environment variable in `./backend/.env` and/or `REACT_APP_API_URL` in `./frontend/.env`.
 
 ## 3. Run project
 
@@ -23,10 +23,10 @@ From the root folder, run the following command to run projects in the backgroun
 docker-compose up --build -d
 ```
 
-If for any reason you wish to run projects without docker, you can simply run projects manually by navigating to both `backend` and `frontend` project folders using `yarn` or `npm`.
+If for any reason you wish to run projects without docker, you can simply run both _backend_ and _frontend_ projects manually using `yarn` or `npm`. Make sure to install dependencies as needed.
 
 ## 4. Walkthrough
 
 * Frontend is a SPA that only lists a single user transaction, you can refresh transactions unsing the top-right button in the navbar.
 
-* Backend API is documented in `backend/postman` using a Postman json collection.
+* Backend API is documented in `./backend/postman` using a Postman json collection.
